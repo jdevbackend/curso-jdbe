@@ -90,16 +90,16 @@ I-Inativo por tempo de acesso expirado]]></commentInRDBMS>
 <defaultValue>P</defaultValue>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_aluno" id="C5F41444-996B-251D-53FF-4AFDA61D6B12">
+<Attribute name="id_aluno" id="00DE9E44-B46B-FAC7-4AEC-6C44B6CCE3A4">
 <createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 01:33:14 UTC</createdTime>
+<createdTime>2023-03-05 03:57:54 UTC</createdTime>
 <generatorID>1CB17486-7F1A-D485-F79A-9000A5B7A2BE</generatorID>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
 <engineerTo>
 <item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>4DB3E40D-86A2-2E88-4ED4-3CF6E078EA93</referedAttribute>
+<referedAttribute>97107C77-BB46-A7AC-1418-B8E3897ED459</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -126,10 +126,9 @@ I-Inativo por tempo de acesso expirado]]></commentInRDBMS>
 <engineerTo>
 <item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
 </engineerTo>
-<newElementsIDs>D7B7E374-CC08-3172-817A-F5954923C21D,C5F41444-996B-251D-53FF-4AFDA61D6B12</newElementsIDs>
+<newElementsIDs>D7B7E374-CC08-3172-817A-F5954923C21D</newElementsIDs>
 <usedAttributes>
 <attributeRef>D7B7E374-CC08-3172-817A-F5954923C21D</attributeRef>
-<attributeRef>C5F41444-996B-251D-53FF-4AFDA61D6B12</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

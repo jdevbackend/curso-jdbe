@@ -1,17 +1,17 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ALUNO_COMENTARIO" directorySegmentName="seg_0" id="5B09D4E0-FAE0-9A99-F057-5EAA5B397B99">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ADMINISTRADOR_COMENTARIO" directorySegmentName="seg_0" id="08D37778-759D-4449-D29F-76CE7A9D8A96">
 <createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 01:45:50 UTC</createdTime>
+<createdTime>2023-03-05 03:54:04 UTC</createdTime>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
 <engineerTo>
 <item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
 </engineerTo>
-<sourcePk>3F49DF5B-A1B3-EF1B-4D82-5BDF8FA9FCB6</sourcePk>
+<sourcePk>B86383C3-A4A7-2AF5-754A-F888CE16A94A</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>061348B6-59EC-57D3-BCE8-4AC52451236A</sourceEntity>
+<sourceEntity>418E8817-4DB1-5CCA-D722-38C2B5595FEC</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
 <targetEntity>E6548C8C-6D14-7C9C-CD8F-9CFDF58D0768</targetEntity>
 <transferable>true</transferable>

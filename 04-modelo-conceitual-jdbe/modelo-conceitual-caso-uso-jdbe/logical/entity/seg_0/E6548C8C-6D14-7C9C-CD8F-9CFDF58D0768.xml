@@ -29,73 +29,16 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_comentario_filho" id="8243DD7A-BEEF-6393-598A-164E44E7F513">
+<Attribute name="id_comentario_filho" id="FEC67D95-F2BB-F1E4-A3AC-4CEE2ED3F924">
 <createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 01:34:14 UTC</createdTime>
-<generatorID>41B22171-6B37-F1B6-5227-93B55CFE9427</generatorID>
+<createdTime>2023-03-05 03:53:33 UTC</createdTime>
+<generatorID>9E49F76D-8761-DAA0-9DB1-C4DA5CAAC1C1</generatorID>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
 <engineerTo>
 <item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>AFD25253-2DDA-44D2-C8DA-91BA5AA6731F</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_aula" id="88DBF75A-5385-ED02-54CA-91A9E05A805D">
-<createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 01:30:08 UTC</createdTime>
-<generatorID>7915F2F9-1CFC-0867-774D-855D92FCFA4D</generatorID>
-<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
-<engineerTo>
-<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>6CD5D4C9-68EF-149A-C286-96B2CCBD2059</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_aluno" id="B9F3C24E-CE6D-EC89-3428-FCFE422B2789">
-<createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 01:45:50 UTC</createdTime>
-<generatorID>5B09D4E0-FAE0-9A99-F057-5EAA5B397B99</generatorID>
-<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
-<engineerTo>
-<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
-</engineerTo>
-<referedAttribute>4DB3E40D-86A2-2E88-4ED4-3CF6E078EA93</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_professor" id="1CF76014-8F39-978D-18FA-9FFEB8028C5B">
-<createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 01:47:17 UTC</createdTime>
-<generatorID>9CC9F220-F75F-A422-CFCE-36264F3AFBE0</generatorID>
-<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
-<engineerTo>
-<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
-</engineerTo>
-<referedAttribute>B93E5D3F-5C28-9A86-4B77-DAB390458D3E</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id_administrador" id="5971AC33-AC5D-E1E3-A4E7-B383C8D1BC08">
-<createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 01:47:26 UTC</createdTime>
-<generatorID>62B6F013-AE65-E437-3809-E886D2EE849E</generatorID>
-<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
-<engineerTo>
-<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
-</engineerTo>
-<referedAttribute>D7CF47E6-851F-EA3A-BD71-69A5163CE010</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -143,6 +86,62 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_aula" id="FADDC234-E28E-52DD-D2DE-A0D3B03C354C">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:53:44 UTC</createdTime>
+<generatorID>A8253A1D-9760-2E66-46BB-A8B3D7C48861</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>6CD5D4C9-68EF-149A-C286-96B2CCBD2059</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_aluno" id="3D1145D6-5C11-1EE4-A556-A0F028927838">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:57:54 UTC</createdTime>
+<generatorID>9906B9AF-E428-0376-1109-6C0DB64E05C7</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>97107C77-BB46-A7AC-1418-B8E3897ED459</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_administrador" id="6B711236-2377-9042-65B1-FDBB87F7B4D3">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:58:39 UTC</createdTime>
+<generatorID>08D37778-759D-4449-D29F-76CE7A9D8A96</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>C7B1A52F-F8DF-215D-B9F6-93964A3C9331</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_professor" id="F7DE2FAD-9852-D88A-312E-16058F455887">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:58:51 UTC</createdTime>
+<generatorID>CEEBEE49-AB3C-ABC2-E319-01E4E01A8B8D</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>FE472916-27E8-11D6-42FA-05DD629629E5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

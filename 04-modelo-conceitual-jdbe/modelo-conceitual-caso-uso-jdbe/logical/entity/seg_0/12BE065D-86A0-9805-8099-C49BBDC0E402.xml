@@ -28,20 +28,6 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_professor" id="3874E2BB-8C6D-3BA2-08A5-7DA6AFC05375">
-<createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 02:23:27 UTC</createdTime>
-<generatorID>3DCC62F7-89D6-4FEC-7C2D-F6ACC514D6FC</generatorID>
-<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
-<engineerTo>
-<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
-</engineerTo>
-<referedAttribute>B93E5D3F-5C28-9A86-4B77-DAB390458D3E</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="nr_ddi" id="2AD082FF-2CA8-D409-9891-D27B1FAB1BBE">
 <createdBy>priscilaresende</createdBy>
 <createdTime>2023-03-05 02:21:50 UTC</createdTime>
@@ -87,10 +73,10 @@
 <dataTypePrecision>9</dataTypePrecision>
 <ownDataTypeParameters>,9,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nm_tipo_telefone" id="E487F859-0CF0-05ED-A5AE-1378A1DE7678">
+<Attribute name="tp_telefone" id="E487F859-0CF0-05ED-A5AE-1378A1DE7678">
 <createdBy>priscilaresende</createdBy>
 <createdTime>2023-03-05 02:24:34 UTC</createdTime>
-<commentInRDBMS><![CDATA[Descrição do tipo do telefone: Comercial, Residencial, Pessoal.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Descrição do tipo do telefone: C-Comercial, R-Residencial, P-Pessoal.]]></commentInRDBMS>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
 <engineerTo>
 <item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
@@ -99,6 +85,21 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pessoa" id="EB918F93-3CAC-EEAC-FFE8-E4248CCA25F9">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:43:02 UTC</createdTime>
+<generatorID>AE9E9644-FA7D-413C-10AA-BC85A683D623</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>D2A9D7F8-17B4-C307-ED0B-A32EFF2AB47C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -115,7 +116,7 @@
 <attributeRef>C7CE0002-4C94-1953-81F9-B75884D80C82</attributeRef>
 </usedAttributes>
 </identifier>
-<identifier id="62131184-C7F2-721A-704B-CE09A9000437" name="PROFESSOR_TELEFONE_UK">
+<identifier id="62131184-C7F2-721A-704B-CE09A9000437" name="PESSOA_TELEFONE_UK">
 <createdBy>priscilaresende</createdBy>
 <createdTime>2023-03-05 02:23:47 UTC</createdTime>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>

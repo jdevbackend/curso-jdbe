@@ -1,8 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="011C923A-C9D8-4410-8A6E-BEDF3E9FE22B" name="PROFESSOR">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="418E8817-4DB1-5CCA-D722-38C2B5595FEC" name="ADMINISTRADOR">
 <createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-04 21:48:12 UTC</createdTime>
-<commentInRDBMS><![CDATA[Entidade responsável por persistir dados do professor.]]></commentInRDBMS>
+<createdTime>2023-03-05 03:18:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por persistir dados do Administrador
+.]]></commentInRDBMS>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
 <engineerTo>
 <item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
@@ -16,10 +17,10 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_professor" id="FE472916-27E8-11D6-42FA-05DD629629E5">
+<Attribute name="id_administrador" id="C7B1A52F-F8DF-215D-B9F6-93964A3C9331">
 <createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 03:57:28 UTC</createdTime>
-<generatorID>38CC14E6-F0CE-BAFB-C214-59CD3F0225CD</generatorID>
+<createdTime>2023-03-05 03:57:20 UTC</createdTime>
+<generatorID>E24638D6-3704-4ECC-E8E4-52BD5F294EF0</generatorID>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
 <engineerTo>
 <item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
@@ -30,24 +31,9 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ds_sobre_instrutor" id="BF2678BF-6494-48FF-CA36-53C886C68D13">
+<Attribute name="vl_salario" id="25FA2CEE-91DB-023E-D4D8-C2C8BFA72EB6">
 <createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 03:24:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Descrição sobre o instrutor.]]></commentInRDBMS>
-<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
-<engineerTo>
-<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>2000</dataTypeSize>
-<ownDataTypeParameters>2000,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="vl_salario" id="4A4B5483-B0DB-2BCE-13E1-0C00E2CFE159">
-<createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 00:48:11 UTC</createdTime>
+<createdTime>2023-03-05 03:18:36 UTC</createdTime>
 <commentInRDBMS><![CDATA[Salário do Professor.]]></commentInRDBMS>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
 <engineerTo>
@@ -63,16 +49,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="AF19B32A-D277-8228-DE6B-3DB568D36A34" name="PROFESSOR PK">
+<identifier id="B86383C3-A4A7-2AF5-754A-F888CE16A94A" name="ADMINISTRADOR PK">
 <createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 03:15:37 UTC</createdTime>
+<createdTime>2023-03-05 03:43:45 UTC</createdTime>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
 <engineerTo>
 <item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>FE472916-27E8-11D6-42FA-05DD629629E5</attributeRef>
+<attributeRef>C7B1A52F-F8DF-215D-B9F6-93964A3C9331</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

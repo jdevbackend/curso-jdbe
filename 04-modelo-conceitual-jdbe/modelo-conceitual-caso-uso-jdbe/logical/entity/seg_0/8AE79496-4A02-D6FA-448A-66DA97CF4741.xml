@@ -1,8 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="011C923A-C9D8-4410-8A6E-BEDF3E9FE22B" name="PROFESSOR">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8AE79496-4A02-D6FA-448A-66DA97CF4741" name="ESCOLARIDADE">
 <createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-04 21:48:12 UTC</createdTime>
-<commentInRDBMS><![CDATA[Entidade responsável por persistir dados do professor.]]></commentInRDBMS>
+<createdTime>2023-03-05 03:05:49 UTC</createdTime>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
 <engineerTo>
 <item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
@@ -16,24 +15,23 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_professor" id="FE472916-27E8-11D6-42FA-05DD629629E5">
+<Attribute name="id_escolaridade" id="1B871BCF-A7DE-B700-BA3E-C81B0ED63678">
 <createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 03:57:28 UTC</createdTime>
-<generatorID>38CC14E6-F0CE-BAFB-C214-59CD3F0225CD</generatorID>
+<createdTime>2023-03-05 03:05:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único.]]></commentInRDBMS>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
 <engineerTo>
 <item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
 </engineerTo>
-<referedAttribute>D2A9D7F8-17B4-C307-ED0B-A32EFF2AB47C</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ds_sobre_instrutor" id="BF2678BF-6494-48FF-CA36-53C886C68D13">
+<Attribute name="ds_escolaridade" id="67D2E8E2-B3B2-8CB5-DAD6-45B19F90EF75">
 <createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 03:24:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Descrição sobre o instrutor.]]></commentInRDBMS>
+<createdTime>2023-03-05 03:06:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Escolaridade do aluno, exemplo: Esino Fundamental, Esino médio, Graduação, Pós-Graduação e etc.]]></commentInRDBMS>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
 <engineerTo>
 <item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
@@ -42,37 +40,21 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>2000</dataTypeSize>
-<ownDataTypeParameters>2000,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="vl_salario" id="4A4B5483-B0DB-2BCE-13E1-0C00E2CFE159">
-<createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 00:48:11 UTC</createdTime>
-<commentInRDBMS><![CDATA[Salário do Professor.]]></commentInRDBMS>
-<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
-<engineerTo>
-<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>8</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="AF19B32A-D277-8228-DE6B-3DB568D36A34" name="PROFESSOR PK">
+<identifier id="725A8296-7954-4588-A9B8-513893AEB560" name="ESCOLARIDADE PK">
 <createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 03:15:37 UTC</createdTime>
+<createdTime>2023-03-05 03:16:55 UTC</createdTime>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
 <engineerTo>
 <item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>FE472916-27E8-11D6-42FA-05DD629629E5</attributeRef>
+<attributeRef>1B871BCF-A7DE-B700-BA3E-C81B0ED63678</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

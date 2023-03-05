@@ -29,6 +29,20 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_categoria" id="17B55519-085D-8CB1-C22D-3356D68C8222">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 02:59:40 UTC</createdTime>
+<generatorID>24B4D244-16AF-E863-6106-4DFC0E1EC169</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>4DA7C7A4-A29F-CDA0-298F-C961EE608F9D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="nm_titulo" id="D1D163FB-7E56-B32E-D876-01743DC90933">
 <createdBy>priscilaresende</createdBy>
 <createdTime>2023-03-05 00:25:34 UTC</createdTime>
@@ -134,20 +148,6 @@ S/N]]></commentInRDBMS>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ds_categoria" id="69304698-A7AA-F86E-A4F4-0D6D866607B2">
-<createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-05 01:48:32 UTC</createdTime>
-<commentInRDBMS><![CDATA[Descrição da categoria do curso.]]></commentInRDBMS>
-<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
-<engineerTo>
-<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

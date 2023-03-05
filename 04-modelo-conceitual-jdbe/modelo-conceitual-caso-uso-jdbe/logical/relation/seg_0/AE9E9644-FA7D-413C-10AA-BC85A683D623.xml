@@ -1,19 +1,19 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ALUNO_MATRICULA" directorySegmentName="seg_0" id="1CB17486-7F1A-D485-F79A-9000A5B7A2BE">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PESSOA_TELEFONE" directorySegmentName="seg_0" id="AE9E9644-FA7D-413C-10AA-BC85A683D623">
 <createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-04 23:22:47 UTC</createdTime>
+<createdTime>2023-03-05 03:13:15 UTC</createdTime>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
 <engineerTo>
 <item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
 </engineerTo>
-<sourcePk>FB78A3F1-D142-E550-5389-AEA32ACC8D1A</sourcePk>
+<sourcePk>C5B22D9F-B82E-A8E3-010A-869F0445FDAE</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>
-<optionalTarget>true</optionalTarget>
+<optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>061348B6-59EC-57D3-BCE8-4AC52451236A</sourceEntity>
+<sourceEntity>D96AF7C0-25DE-C345-D7A3-C6741BB1BE2E</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>07227191-43AF-6737-0F3E-2EEC289550D4</targetEntity>
+<targetEntity>12BE065D-86A0-9805-8099-C49BBDC0E402</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>
