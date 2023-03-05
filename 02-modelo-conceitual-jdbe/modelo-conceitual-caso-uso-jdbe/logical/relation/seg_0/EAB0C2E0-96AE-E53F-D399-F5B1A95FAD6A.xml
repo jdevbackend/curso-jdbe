@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ADMINISTRADOR_COMENTARIO" directorySegmentName="seg_0" id="EAB0C2E0-96AE-E53F-D399-F5B1A95FAD6A">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-04 23:57:44 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>741B6F7B-28E0-4124-0D50-0704FD8D6259</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E6548C8C-6D14-7C9C-CD8F-9CFDF58D0768</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
