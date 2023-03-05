@@ -1,0 +1,265 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="011C923A-C9D8-4410-8A6E-BEDF3E9FE22B" name="PROFESSOR">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-04 21:48:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por persistir dados do professor.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_professor" id="B93E5D3F-5C28-9A86-4B77-DAB390458D3E">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:37:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único numérico sequêncial.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_usuario" id="5C5C6188-716C-80F2-3823-0CC18968918F">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:44:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Para acessar a plataforma, o usuário sempre utilizará um e-mail.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_senha" id="DD41DFB5-1FC6-A5F9-5965-E9FEF2A1455B">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:44:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Senha do usuário. Deverá conter letras, números e caracteres especiais.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_primeiro_nome" id="46BC7B35-8CC1-7118-4778-47E0997BFB5E">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:45:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do professor.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_sobrenome" id="2A00638D-DC41-0766-D8A4-5E4F8C0F3FEA">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:52:28 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_cpf" id="47E78313-EC28-64E6-0866-CD32F7D478CE">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:45:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do CPF do professor.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_rg" id="BD665885-7317-1614-3C71-F9CA2F4FF66B">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:45:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do RG do professor.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_nascimento" id="971DBF2F-2953-2DB2-0995-E612FA263D19">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:46:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de nascimento.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_logradouro" id="43A81001-3809-C23C-5D0F-8F5CFFE9FB12">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:46:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do logradouro onde o professor reside.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_logradouro" id="EF6ADBA2-B8CE-DFB5-FDE6-8CED08610F03">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:46:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do logradouro.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_cep" id="7956154B-B6F5-D99D-7538-74EDF060F69E">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:47:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[CEP referente ao logradouro.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_cidade" id="66B62A82-CA31-9F5A-1B63-B817D0CCF44D">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:47:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da cidade.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_estado" id="4643251F-58BC-BFD6-E79E-ABD1F16FBA0A">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:47:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do estado.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_salario" id="4A4B5483-B0DB-2BCE-13E1-0C00E2CFE159">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:48:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Salário do Professor.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E3E01A48-4C34-8421-306C-E74A1A0D2F03" name="PROFESSOR_UK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:36:49 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<newElementsIDs>47E78313-EC28-64E6-0866-CD32F7D478CE</newElementsIDs>
+<usedAttributes>
+<attributeRef>47E78313-EC28-64E6-0866-CD32F7D478CE</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="538D84BB-C00E-9196-C5B9-A89F29E1826C" name="PROFESSOR_UK01">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:37:02 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<newElementsIDs>BD665885-7317-1614-3C71-F9CA2F4FF66B</newElementsIDs>
+<usedAttributes>
+<attributeRef>BD665885-7317-1614-3C71-F9CA2F4FF66B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="41760F40-9DD0-8005-1C2A-C83099772CDB" name="PROFESSOR PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:46:29 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B93E5D3F-5C28-9A86-4B77-DAB390458D3E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

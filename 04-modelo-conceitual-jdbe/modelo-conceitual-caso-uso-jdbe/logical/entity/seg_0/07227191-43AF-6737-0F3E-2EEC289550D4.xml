@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="07227191-43AF-6737-0F3E-2EEC289550D4" name="MATRICULA">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-04 21:57:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por persistir dados da matrícula. Ela é responsável por descrever quem comprou, quando e qual curso foi adquirido na plataforma, bem como seu status.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_matricula" id="DF09968D-B2AC-E3D5-0203-4435D7197B88">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:27:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único numérico sequêncial.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_curso" id="D7B7E374-CC08-3172-817A-F5954923C21D">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:28:47 UTC</createdTime>
+<generatorID>AA7EC294-109C-29F9-2EB3-C38703F64195</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>405D6310-4E6A-8801-AE75-3D61FDE219B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_matricula" id="2447D8DD-9DA0-1B5C-0A95-D93581CF9C1C">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:14:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que a matrícula foi efetuada.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_vigencia" id="CD0C6D82-FD6D-1154-CB4D-C7E95AF842A9">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:14:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da vigência da matrícula.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_status" id="6094B7B8-C6C4-8A75-CF3C-E281D39ECCDE">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:28:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status da matricula que pode ser:
+P-Pendente pagamento
+A-Ativo
+I-Inativo por tempo de acesso expirado]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<defaultValue>P</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_aluno" id="C5F41444-996B-251D-53FF-4AFDA61D6B12">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:33:14 UTC</createdTime>
+<generatorID>1CB17486-7F1A-D485-F79A-9000A5B7A2BE</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4DB3E40D-86A2-2E88-4ED4-3CF6E078EA93</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C4DC3F0C-61EF-4059-BEF4-1E2244D76102" name="MATRICULA PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:27:44 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DF09968D-B2AC-E3D5-0203-4435D7197B88</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="AEEFC2A2-5B29-3DA9-F133-03A19750FF53" name="MATRICULA_UK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:39:17 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<newElementsIDs>D7B7E374-CC08-3172-817A-F5954923C21D,C5F41444-996B-251D-53FF-4AFDA61D6B12</newElementsIDs>
+<usedAttributes>
+<attributeRef>D7B7E374-CC08-3172-817A-F5954923C21D</attributeRef>
+<attributeRef>C5F41444-996B-251D-53FF-4AFDA61D6B12</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

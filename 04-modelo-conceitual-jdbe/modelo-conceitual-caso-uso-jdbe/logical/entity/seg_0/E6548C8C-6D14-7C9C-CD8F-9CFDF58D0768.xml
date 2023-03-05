@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E6548C8C-6D14-7C9C-CD8F-9CFDF58D0768" name="COMENTARIO">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-04 21:50:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela responsável por persistir comentários de uma aula.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_comentario" id="AFD25253-2DDA-44D2-C8DA-91BA5AA6731F">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:33:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único numérico sequêncial.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_comentario_filho" id="8243DD7A-BEEF-6393-598A-164E44E7F513">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:34:14 UTC</createdTime>
+<generatorID>41B22171-6B37-F1B6-5227-93B55CFE9427</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>AFD25253-2DDA-44D2-C8DA-91BA5AA6731F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_aula" id="88DBF75A-5385-ED02-54CA-91A9E05A805D">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:30:08 UTC</createdTime>
+<generatorID>7915F2F9-1CFC-0867-774D-855D92FCFA4D</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6CD5D4C9-68EF-149A-C286-96B2CCBD2059</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_aluno" id="B9F3C24E-CE6D-EC89-3428-FCFE422B2789">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:45:50 UTC</createdTime>
+<generatorID>5B09D4E0-FAE0-9A99-F057-5EAA5B397B99</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>4DB3E40D-86A2-2E88-4ED4-3CF6E078EA93</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_professor" id="1CF76014-8F39-978D-18FA-9FFEB8028C5B">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:47:17 UTC</createdTime>
+<generatorID>9CC9F220-F75F-A422-CFCE-36264F3AFBE0</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>B93E5D3F-5C28-9A86-4B77-DAB390458D3E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_administrador" id="5971AC33-AC5D-E1E3-A4E7-B383C8D1BC08">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:47:26 UTC</createdTime>
+<generatorID>62B6F013-AE65-E437-3809-E886D2EE849E</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>D7CF47E6-851F-EA3A-BD71-69A5163CE010</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_comentario" id="4CA1D0EC-2C28-7694-0DF9-B584B746267A">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:41:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Comentário.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_status" id="3F2EA607-3DA1-A8B2-B11D-33F25EE0A82D">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:41:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifica se o comentário foi aprovado pela área administrativa. S/N]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_comentario" id="818D23DA-0ADC-C190-F4B9-2CB2EEAFE740">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:55:49 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A4964621-DEB3-CBC4-2E62-AA91FF2A1886" name="COMENTARIO PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:33:44 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AFD25253-2DDA-44D2-C8DA-91BA5AA6731F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
