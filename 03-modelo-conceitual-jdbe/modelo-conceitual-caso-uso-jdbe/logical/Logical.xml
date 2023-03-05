@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="18E13B0C-AE2D-9A01-3650-87C34E0AA75E" mainViewID="D7D29E92-7FD2-0778-B268-662C0C6380F9">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-04 21:14:08 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
