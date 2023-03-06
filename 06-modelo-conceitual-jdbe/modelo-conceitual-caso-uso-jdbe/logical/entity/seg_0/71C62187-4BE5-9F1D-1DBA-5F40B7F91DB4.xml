@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="71C62187-4BE5-9F1D-1DBA-5F40B7F91DB4" name="AVALIACAO">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:24:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela responsável por armazenar os dados de avaliação das aulas.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id aula" id="EAAE1CE2-4E54-1B30-EB20-4A890B8DF182">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:25:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da aula.]]></commentInRDBMS>
+<generatorID>810DA733-0B93-7982-C3E3-6920623CD1C7</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>6CD5D4C9-68EF-149A-C286-96B2CCBD2059</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qt estrelas" id="2164152E-E752-CB58-4587-DE2EB4FB9FDB">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:26:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de estrelas de 1 a 5.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<constraintName>AVALIACAO_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<listOfValues>
+<valueDef value="1" description=""/>
+<valueDef value="2" description=""/>
+<valueDef value="3" description=""/>
+<valueDef value="4" description=""/>
+<valueDef value="5" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id aluno" id="EE8C3331-EC8C-D106-CEAF-B4B46A81E853">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:03:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do aluno.]]></commentInRDBMS>
+<generatorID>378D7AB3-6DF1-5863-7FCA-9D54516010E9</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_aluno" id="4E140DF3-1623-A49B-666D-48EC44D64332">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:04:43 UTC</createdTime>
+<generatorID>746AA3B0-41E1-B95E-7023-69B400B92551</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>C12AE76B-0F0B-61C7-9563-EEC43539CFE8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6964EC47-3D6B-E85B-8391-9F67749B93B1" name="AVALIACAO PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:26:06 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EAAE1CE2-4E54-1B30-EB20-4A890B8DF182</attributeRef>
+<attributeRef>4E140DF3-1623-A49B-666D-48EC44D64332</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

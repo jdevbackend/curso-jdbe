@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7EAAF329-F0AE-032C-1FDF-B64383AE2336" name="ENDERECO">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:02:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por persistir dados do endereço.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id endereco" id="501EAE45-9DDB-1945-CDC3-52AE1606C726">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:02:57 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<use>0</use>
+<defaultValue>ENDERECO_SEQ.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id cidade" id="B30DA0FC-76B0-7E59-DE07-DB40A549A130">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:05:37 UTC</createdTime>
+<generatorID>51FE5EA5-6595-F167-4CEA-50C94A82D7A1</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>9E619C27-D53A-B729-C8CA-0D53424E2B64</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm logradouro" id="DADC82B4-D994-3B2A-E423-F976F0246AB1">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:02:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do logradouro onde o aluno reside.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr logradouro" id="E8AE8CC8-F8E6-2C5C-0A74-41CD920DC88D">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:02:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do logradouro.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd cep" id="03F4103E-442F-D571-7642-44880EA3C974">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:02:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[CEP referente ao logradouro.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id aluno" id="CA209CAC-B8C6-42C8-FF83-47063F905210">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:03:45 UTC</createdTime>
+<generatorID>4C0E1D0B-74C2-DBA8-3EB0-B91BAD34FAA6</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_aluno" id="3D9BCAC8-9943-ED0A-9B30-12D59F9294A0">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:04:43 UTC</createdTime>
+<generatorID>CDA1D95F-2086-4690-5611-F3736B3E2630</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>C12AE76B-0F0B-61C7-9563-EEC43539CFE8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="20358181-C0D0-5F06-67FD-62367C9FFF6A" name="ENDERECO PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:04:43 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>501EAE45-9DDB-1945-CDC3-52AE1606C726</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

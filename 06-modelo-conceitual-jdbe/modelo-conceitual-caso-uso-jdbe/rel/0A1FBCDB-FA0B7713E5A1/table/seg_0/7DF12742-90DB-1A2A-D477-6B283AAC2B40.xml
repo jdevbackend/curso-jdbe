@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7DF12742-90DB-1A2A-D477-6B283AAC2B40" name="ADMINISTRADOR">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por persistir dados do Administrador
+.]]></commentInRDBMS>
+<generatorID>418E8817-4DB1-5CCA-D722-38C2B5595FEC</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_administrador" id="04F1343D-1B7B-F8AB-2B16-CE5F8A63FEAF">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:18:43 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A23CBF4B-BBE1-B250-BE8A-20B499F53B86" referredColumn="F82AAB05-EE27-C7AF-BD9F-925D19F0035F"/>
+</associations>
+</Column>
+<Column name="vl_salario" id="3D30307B-F726-4D3D-D3B5-693F3C54E5CD">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Salário do Professor.]]></commentInRDBMS>
+<generatorID>25FA2CEE-91DB-023E-D4D8-C2C8BFA72EB6</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32D0E5B6-202E-9EA2-E95F-818906274B36" name="ADMINISTRADOR_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<generatorID>B86383C3-A4A7-2AF5-754A-F888CE16A94A</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04F1343D-1B7B-F8AB-2B16-CE5F8A63FEAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24D0DD24-5B50-44CC-FE39-1FEA189C0032" name="ADMINISTRADOR_PESSOA_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<generatorID>E24638D6-3704-4ECC-E8E4-52BD5F294EF0</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04F1343D-1B7B-F8AB-2B16-CE5F8A63FEAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

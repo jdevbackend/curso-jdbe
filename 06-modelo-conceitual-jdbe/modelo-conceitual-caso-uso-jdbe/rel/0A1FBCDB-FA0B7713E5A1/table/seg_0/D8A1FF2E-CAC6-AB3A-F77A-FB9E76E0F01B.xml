@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8A1FF2E-CAC6-AB3A-F77A-FB9E76E0F01B" name="CATEGORIA">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<generatorID>9FFA9A6B-45A8-DFB5-1701-E3CD218B29F4</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_categoria" id="D046415F-F08E-E3F4-D245-22865B535698">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador numérico sequencial.]]></commentInRDBMS>
+<generatorID>4DA7C7A4-A29F-CDA0-298F-C961EE608F9D</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>CATEGORIA_SEQ.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>CATEGORIA_SEQ</autoIncrementSequenceName>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="ds_categoria" id="D4C69568-954B-C2E5-33BF-2D3310E58F03">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Categorias: Banco da dos, Back-end, Front-End, Arquitetura.]]></commentInRDBMS>
+<generatorID>16CB4BBF-303B-73AC-7C12-725A80F9729D</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1270C41E-EEBA-FD2E-B3F3-6C676AAA26DE" name="CATEGORIA_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<generatorID>BF81018A-DEBC-A873-1AD8-A7FE66FEA14C</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D046415F-F08E-E3F4-D245-22865B535698"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

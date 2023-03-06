@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1C1E7EC7-F57C-B7D9-1032-28C2EFF17C8C" name="ESCOLARIDADE">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<generatorID>8AE79496-4A02-D6FA-448A-66DA97CF4741</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_escolaridade" id="178DF416-B9B6-206F-8643-6FE783065916">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único.]]></commentInRDBMS>
+<generatorID>1B871BCF-A7DE-B700-BA3E-C81B0ED63678</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>ESCOLARIDADE_SEQ.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>ESCOLARIDADE_SEQ</autoIncrementSequenceName>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="ds_escolaridade" id="57152701-E510-F17F-CD88-EB6FC0F2866E">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Escolaridade do aluno, exemplo: Esino Fundamental, Esino médio, Graduação, Pós-Graduação e etc.]]></commentInRDBMS>
+<generatorID>67D2E8E2-B3B2-8CB5-DAD6-45B19F90EF75</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D762F977-4D23-18B0-F9A7-96D434C52E92" name="ESCOLARIDADE_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<generatorID>725A8296-7954-4588-A9B8-513893AEB560</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="178DF416-B9B6-206F-8643-6FE783065916"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

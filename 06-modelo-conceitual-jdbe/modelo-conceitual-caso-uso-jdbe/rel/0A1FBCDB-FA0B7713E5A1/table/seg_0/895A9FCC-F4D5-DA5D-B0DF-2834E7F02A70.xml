@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="895A9FCC-F4D5-DA5D-B0DF-2834E7F02A70" name="AVALIACAO">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela responsável por armazenar os dados de avaliação das aulas.]]></commentInRDBMS>
+<generatorID>71C62187-4BE5-9F1D-1DBA-5F40B7F91DB4</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_aula" id="9DC1A49D-0EFF-74F6-C11B-F5BF1DEF927A">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da aula.]]></commentInRDBMS>
+<generatorID>EAAE1CE2-4E54-1B30-EB20-4A890B8DF182</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6198043F-977E-D1C2-B5AF-4350E267C6E7" referredColumn="42885382-1ED6-B897-50F6-AED17423DB77"/>
+</associations>
+</Column>
+<Column name="id_aluno" id="303745A6-2C24-5CA8-DF90-D66CC29A352B">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:19:22 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC048F64-27F1-EC93-6A33-CD2CD6977712" referredColumn="616ADBC3-AD73-2D94-7D98-E0740E23D29D"/>
+</associations>
+</Column>
+<Column name="qt_estrelas" id="A3454587-EF8B-E851-8691-FA60348B9176">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de estrelas de 1 a 5.]]></commentInRDBMS>
+<generatorID>2164152E-E752-CB58-4587-DE2EB4FB9FDB</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<constraintName>AVALIACAO_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<listOfValues>
+<valueDef value="1" description=""/>
+<valueDef value="2" description=""/>
+<valueDef value="3" description=""/>
+<valueDef value="4" description=""/>
+<valueDef value="5" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C4865B64-7A64-E9B9-1DFB-71FE4B0FE12D" name="AVALIACAO_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<generatorID>6964EC47-3D6B-E85B-8391-9F67749B93B1</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DC1A49D-0EFF-74F6-C11B-F5BF1DEF927A"/>
+<colUsage columnID="303745A6-2C24-5CA8-DF90-D66CC29A352B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B22C0D36-3E85-46D3-6058-9F1D2E694E9A" name="AVALIACAO_ALUNO_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<generatorID>746AA3B0-41E1-B95E-7023-69B400B92551</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="303745A6-2C24-5CA8-DF90-D66CC29A352B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51E162CA-11ED-3E2C-2C25-7119C674CC00" name="AVALIACAO_AULA_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<generatorID>810DA733-0B93-7982-C3E3-6920623CD1C7</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DC1A49D-0EFF-74F6-C11B-F5BF1DEF927A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

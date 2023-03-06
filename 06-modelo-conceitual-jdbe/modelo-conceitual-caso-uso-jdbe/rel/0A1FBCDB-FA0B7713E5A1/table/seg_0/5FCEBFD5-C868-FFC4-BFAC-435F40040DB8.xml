@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5FCEBFD5-C868-FFC4-BFAC-435F40040DB8" name="PROFESSOR">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por persistir dados do professor.]]></commentInRDBMS>
+<generatorID>011C923A-C9D8-4410-8A6E-BEDF3E9FE22B</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_professor" id="FF99A61B-A3AC-8CB4-005E-79C4C3CDF8AF">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:18:43 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9B888E3-1C61-EC6E-3EF0-732A95948546" referredColumn="F82AAB05-EE27-C7AF-BD9F-925D19F0035F"/>
+</associations>
+</Column>
+<Column name="ds_sobre_instrutor" id="F813D574-1FAA-A6EA-5EF3-3D21D3E67FBB">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição sobre o instrutor.]]></commentInRDBMS>
+<generatorID>BF2678BF-6494-48FF-CA36-53C886C68D13</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_salario" id="02DA2BF1-B276-38CD-1B97-F8ECEB821408">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Salário do Professor.]]></commentInRDBMS>
+<generatorID>4A4B5483-B0DB-2BCE-13E1-0C00E2CFE159</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="51485FA2-7338-E7B0-EE32-625EB7CFBF64" name="PROFESSOR_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<generatorID>AF19B32A-D277-8228-DE6B-3DB568D36A34</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF99A61B-A3AC-8CB4-005E-79C4C3CDF8AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCE7D6F8-B247-2723-6E02-5C7E5C66B10A" name="PROFESSOR_PESSOA_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:54 UTC</createdTime>
+<generatorID>38CC14E6-F0CE-BAFB-C214-59CD3F0225CD</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF99A61B-A3AC-8CB4-005E-79C4C3CDF8AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

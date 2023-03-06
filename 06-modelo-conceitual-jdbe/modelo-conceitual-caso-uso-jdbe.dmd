@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo-conceitual-caso-uso-jdbe" id="8709C6BC-E328-5309-77AB-8A65D2E196B3" version="3.5">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-04 21:14:08 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>8709C6BC-E328-5309-77AB-8A65D2E196B3</designId>
+</OSDM_Design>

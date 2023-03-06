@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EVOLUCAO AULAS ALUNO FK" directorySegmentName="seg_0" id="F9157C59-A3F3-FC62-75A0-85B81CF6CC4C">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:33:35 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<sourcePk>FB78A3F1-D142-E550-5389-AEA32ACC8D1A</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>061348B6-59EC-57D3-BCE8-4AC52451236A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D8FCFC14-8C02-5C57-2EEE-EA1B82455162</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

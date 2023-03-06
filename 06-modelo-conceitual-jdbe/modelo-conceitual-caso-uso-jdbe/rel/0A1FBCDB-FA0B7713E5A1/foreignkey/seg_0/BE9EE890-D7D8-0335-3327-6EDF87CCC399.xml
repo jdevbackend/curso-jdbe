@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BE9EE890-D7D8-0335-3327-6EDF87CCC399" containerWithKeyObject="A0CE06F2-EAE3-5F6E-FAD4-7B1E60C956E2" localFKIndex="F1E137A3-BF39-A2F3-E982-9D97E0311CFC" name="ENDERECO_ALUNO_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:54 UTC</createdTime>
+<generatorID>CDA1D95F-2086-4690-5611-F3736B3E2630</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<referredTableLongName>ALUNO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A17ABEF3-8166-B6DB-0218-716D50C3C8BC</referredTableID>
+<keyObject>3536CF85-9DE1-15C0-5880-FEA6DEA0BA29</keyObject>
+<referredKeyID>3536CF85-9DE1-15C0-5880-FEA6DEA0BA29</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_aluno</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

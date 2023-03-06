@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="81A8FA53-B7E5-0845-38D9-6A8BCE3B2AD9" containerWithKeyObject="BE8A93C4-29E4-C2DF-E306-C15566001908" localFKIndex="26752A05-DBDF-F33B-0AEF-19ACD01CB929" name="EVOLUCAO_AULAS_AULA_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:54 UTC</createdTime>
+<generatorID>A4709277-34E5-5DC6-0637-323316132AE5</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<referredTableLongName>AULA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7DF98600-F7E3-0F73-F831-08E59993B2EE</referredTableID>
+<keyObject>1A9C0B5A-AA79-A15F-0B49-8AC108835364</keyObject>
+<referredKeyID>1A9C0B5A-AA79-A15F-0B49-8AC108835364</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_aula</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

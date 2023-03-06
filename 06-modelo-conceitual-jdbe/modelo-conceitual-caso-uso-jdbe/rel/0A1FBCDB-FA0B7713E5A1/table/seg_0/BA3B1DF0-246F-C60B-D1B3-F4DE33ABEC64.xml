@@ -1,0 +1,209 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA3B1DF0-246F-C60B-D1B3-F4DE33ABEC64" name="COMENTARIO">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela responsável por persistir comentários de uma aula.]]></commentInRDBMS>
+<generatorID>E6548C8C-6D14-7C9C-CD8F-9CFDF58D0768</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_comentario" id="03087814-8066-6B7E-69B8-FA83A300F261">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único numérico sequêncial.]]></commentInRDBMS>
+<generatorID>AFD25253-2DDA-44D2-C8DA-91BA5AA6731F</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>COMENTARIO_SEQ.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>COMENTARIO_SEQ</autoIncrementSequenceName>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="id_comentario_filho" id="3D715335-CE11-C019-7567-B6FBD1C6C0C4">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<generatorID>FEC67D95-F2BB-F1E4-A3AC-4CEE2ED3F924</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E363DFE6-3C3D-DB78-CA7C-5D747F9A1171" referredColumn="03087814-8066-6B7E-69B8-FA83A300F261"/>
+</associations>
+</Column>
+<Column name="ds_comentario" id="E0607BE3-BFB6-666E-48E6-F9E4F5F43EF6">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Comentário.]]></commentInRDBMS>
+<generatorID>4CA1D0EC-2C28-7694-0DF9-B584B746267A</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_status" id="F0B2E06F-EF1F-6B9A-0597-F32F945820C7">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identifica se o comentário foi aprovado pela área administrativa. S/N]]></commentInRDBMS>
+<generatorID>3F2EA607-3DA1-A8B2-B11D-33F25EE0A82D</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_comentario" id="45D0FC24-6AA1-A83B-F688-0DDF86A2CDB0">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<generatorID>818D23DA-0ADC-C190-F4B9-2CB2EEAFE740</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_aula" id="E562AA53-9201-25CF-1D35-C762AF3F46F7">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<generatorID>FADDC234-E28E-52DD-D2DE-A0D3B03C354C</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2441CD5D-F426-ECE6-6B0F-3A6E48184344" referredColumn="42885382-1ED6-B897-50F6-AED17423DB77"/>
+</associations>
+</Column>
+<Column name="id_aluno" id="CAEDE8D1-DF90-3521-8B83-2DFF2935547D">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:19:22 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFAFA5C0-9B43-F484-8B4A-A120095B81D6" referredColumn="616ADBC3-AD73-2D94-7D98-E0740E23D29D"/>
+</associations>
+</Column>
+<Column name="id_administrador" id="AE898313-EA6D-5A8E-6CB4-3455BA63C0BC">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:21:06 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C1ED47D-4F6D-6444-29F2-D5E65E79A1E0" referredColumn="04F1343D-1B7B-F8AB-2B16-CE5F8A63FEAF"/>
+</associations>
+</Column>
+<Column name="id_professor" id="449E0A14-F115-F447-EF06-0935722DB30C">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:21:35 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7644E63C-6298-B13C-46B6-DFD53CF84B72" referredColumn="FF99A61B-A3AC-8CB4-005E-79C4C3CDF8AF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8B676923-E363-EB8A-32CC-86D6C502D0B6" name="COMENTARIO_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<generatorID>A4964621-DEB3-CBC4-2E62-AA91FF2A1886</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03087814-8066-6B7E-69B8-FA83A300F261"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E83BA5B6-9267-75DA-A18E-88EE0A08C315" name="COMENTARIO_ADMINISTRADOR_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<generatorID>08D37778-759D-4449-D29F-76CE7A9D8A96</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE898313-EA6D-5A8E-6CB4-3455BA63C0BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6258498-E6AC-CCF0-11C1-545EF189BAEC" name="COMENTARIO_ALUNO_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<generatorID>9906B9AF-E428-0376-1109-6C0DB64E05C7</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CAEDE8D1-DF90-3521-8B83-2DFF2935547D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0CAD9936-0266-BBF9-62F9-D28BBC06713F" name="COMENTARIO_AULA_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<generatorID>A8253A1D-9760-2E66-46BB-A8B3D7C48861</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E562AA53-9201-25CF-1D35-C762AF3F46F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2EA4644A-7E23-ABD0-3739-ABA7177FEEA1" name="COMENTARIO_COMENTARIO_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:54 UTC</createdTime>
+<generatorID>9E49F76D-8761-DAA0-9DB1-C4DA5CAAC1C1</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D715335-CE11-C019-7567-B6FBD1C6C0C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5720A62B-4F1C-11EF-C1DD-4B6A4D8F41B4" name="COMENTARIO_PROFESSOR_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:54 UTC</createdTime>
+<generatorID>CEEBEE49-AB3C-ABC2-E319-01E4E01A8B8D</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="449E0A14-F115-F447-EF06-0935722DB30C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

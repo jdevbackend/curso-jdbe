@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="798F3FF2-B780-F548-5D54-06DF6CD26B9C" name="DETALHE_TRANSACAO_ERRO">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por armazenar as mensagens de erro que podem acontecer com a API de pagamento.]]></commentInRDBMS>
+<generatorID>F1DB9349-F52D-2D00-6B90-3BB63CE7A2A5</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_erro" id="F24E2C37-24DB-1391-2F59-2AF72D9A523D">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único numérico sequêncial.]]></commentInRDBMS>
+<generatorID>91354F10-9858-B9AC-A8E1-663F56F6E7EE</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<defaultValue>DETALHE_TRANSACAO_ERRO_SEQ.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>DETALHE_TRANSACAO_ERRO_SEQ</autoIncrementSequenceName>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="id_matricula" id="F5884021-5DC5-3686-BF1F-27B6F5EAEBAF">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<generatorID>300BBF06-B302-CC19-467E-21A2A3097275</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13A4D809-CCED-5818-CD39-CD8016E2CCB2" referredColumn="299792A6-FA2E-4346-9AC4-C1297B166E35"/>
+</associations>
+</Column>
+<Column name="nr_erro" id="DF850CA1-D725-0AF5-E5B7-61474AC42F24">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do erro na API de pagamento.]]></commentInRDBMS>
+<generatorID>DE9C7672-8ACD-B1C6-0AB4-AB9A3534F848</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_erro" id="EACF57D4-361F-43E0-B215-25A81B69300E">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do erro devolvida pela API de pagamento.]]></commentInRDBMS>
+<generatorID>FB487BDF-8C7F-8A7B-2D00-1173529C684E</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_erro" id="5EC6045A-C3E9-49FE-4D76-FB8B382F50A2">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que o erro ocorreu.]]></commentInRDBMS>
+<generatorID>85A65F61-FA06-62B0-57E2-062E0E6D3E3D</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B4BC1C0-73A5-3CD5-0776-03E1ACD99BCE" name="DETALHE_TRANSACAO_ERRO_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<generatorID>41368168-9C3E-38CC-C03C-307BFED89917</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F24E2C37-24DB-1391-2F59-2AF72D9A523D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79A2CC3F-745B-4313-6EF9-FF358A35D224" name="DETALHE_TRANSACAO_ERRO_MATRICULA_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:54 UTC</createdTime>
+<generatorID>39A99F45-7DF7-7CE2-1047-0A09E19DD616</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5884021-5DC5-3686-BF1F-27B6F5EAEBAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

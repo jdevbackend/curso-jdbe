@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PROFESSOR PESSOA FK" directorySegmentName="seg_0" id="38CC14E6-F0CE-BAFB-C214-59CD3F0225CD">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:57:28 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<targetTransferable>false</targetTransferable>
+<sourcePk>C5B22D9F-B82E-A8E3-010A-869F0445FDAE</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D96AF7C0-25DE-C345-D7A3-C6741BB1BE2E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>011C923A-C9D8-4410-8A6E-BEDF3E9FE22B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="16B6B05F-92F6-0843-60A0-C22B6AB8B943" name="PESSOA">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por persistir dados do administrador da plataforma.]]></commentInRDBMS>
+<generatorID>D96AF7C0-25DE-C345-D7A3-C6741BB1BE2E</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pessoa" id="F82AAB05-EE27-C7AF-BD9F-925D19F0035F">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:18:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>PESSOA_SEQ.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>PESSOA_SEQ</autoIncrementSequenceName>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="id_usuario" id="702909D2-4916-BFB0-9753-5384B95886A9">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<generatorID>61D5B92C-B266-228D-95DD-2FF061E8B67A</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FBD1383-5658-9160-C16B-A57F5C58B22D" referredColumn="90C2D38F-FF1B-46DA-17A1-228B4D6A08F1"/>
+</associations>
+</Column>
+<Column name="dt_nascimento" id="497AD14C-17AF-3E72-20BA-6EF6DAF281A9">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de nascimento.]]></commentInRDBMS>
+<generatorID>A4B3FA61-AB35-4B90-C87F-30F411C59780</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_primeiro_nome" id="2FF98AF0-D7AD-7AC3-B892-1464E564E17F">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo.]]></commentInRDBMS>
+<generatorID>740DB84C-4C8A-4E19-44B7-FFBFA827F59B</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_sobrenome" id="4CC82587-DC4F-7730-526D-C064FEFA3DF0">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sobrenome da pessoa.]]></commentInRDBMS>
+<generatorID>F0C5EDC7-5EF6-77EC-343A-BFE1E83AF22C</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_rg" id="697AED37-E85C-317C-D143-080CF6259235">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do RG  da pessoa.]]></commentInRDBMS>
+<generatorID>F0F7DC94-D6EE-E158-25B7-95C7DE38925F</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_cpf" id="15510517-4E34-729C-497D-B5FBC65DE7EA">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do CPF da pessoa.]]></commentInRDBMS>
+<generatorID>D9D22A8A-804F-59E2-0D78-3F3DF49752B9</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="868257EE-9CE8-9A10-7BF5-4E1DDACCC9E8" name="PESSOA_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<generatorID>C5B22D9F-B82E-A8E3-010A-869F0445FDAE</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F82AAB05-EE27-C7AF-BD9F-925D19F0035F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABAB0442-0303-BE28-571E-2C73EDCAA805" name="PESSOA__IDX">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:54 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>729C897B-EA50-92EE-C446-5F3742522807</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="702909D2-4916-BFB0-9753-5384B95886A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43FFE936-9032-26BD-FAB8-A2077A5C7DE2" name="PESSOA_USUARIO_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:54 UTC</createdTime>
+<generatorID>729C897B-EA50-92EE-C446-5F3742522807</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="702909D2-4916-BFB0-9753-5384B95886A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

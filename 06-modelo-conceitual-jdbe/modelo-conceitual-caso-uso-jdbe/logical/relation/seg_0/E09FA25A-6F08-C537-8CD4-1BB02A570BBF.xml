@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ALUNO ESCOLARIDADE FK" directorySegmentName="seg_0" id="E09FA25A-6F08-C537-8CD4-1BB02A570BBF">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:06:26 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<sourcePk>725A8296-7954-4588-A9B8-513893AEB560</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8AE79496-4A02-D6FA-448A-66DA97CF4741</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>061348B6-59EC-57D3-BCE8-4AC52451236A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

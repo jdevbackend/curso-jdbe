@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D8FCFC14-8C02-5C57-2EEE-EA1B82455162" name="EVOLUCAO AULAS">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:33:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por armazenar a evolução/progresso do aluno perante as aulas.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id aula" id="EEBF7904-56F6-2E71-6700-D197CEA6E719">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:33:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da aula.]]></commentInRDBMS>
+<generatorID>A4709277-34E5-5DC6-0637-323316132AE5</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>6CD5D4C9-68EF-149A-C286-96B2CCBD2059</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st concluido" id="45786B9B-CBB9-C7BF-AB29-CDE58E5748E3">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:34:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica se a áula foi concluída/assistida: S/N.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<constraintName>EVOLUCAO_AULA_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt concluido" id="E25C3C7D-E288-ADD1-8C53-3D40E8A7A050">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:37:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de conclusão da aula.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id aluno" id="634B0F63-DE36-2CB5-9C2F-2E890D47CA8D">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:03:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do aluno.]]></commentInRDBMS>
+<generatorID>5FC6303F-6035-4678-5A2B-C44BC7B3C557</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_aluno" id="65DA02FA-41AB-B6D2-7121-6634F588F1B0">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:04:43 UTC</createdTime>
+<generatorID>F9157C59-A3F3-FC62-75A0-85B81CF6CC4C</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>C12AE76B-0F0B-61C7-9563-EEC43539CFE8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5D006ACD-45B2-2DCA-AF27-67A012ADD5E3" name="EVOLUCAO_AULAS_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:33:49 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EEBF7904-56F6-2E71-6700-D197CEA6E719</attributeRef>
+<attributeRef>65DA02FA-41AB-B6D2-7121-6634F588F1B0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

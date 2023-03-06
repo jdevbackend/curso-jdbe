@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C52C9D0C-8459-8D12-140F-B117A88DC155" name="TELEFONE">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<generatorID>12BE065D-86A0-9805-8099-C49BBDC0E402</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_telefone" id="4DCC6637-149B-6C65-A416-45BE74460E84">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador numérico.]]></commentInRDBMS>
+<generatorID>C7CE0002-4C94-1953-81F9-B75884D80C82</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>TELEFONE_SEQ.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>TELEFONE_SEQ</autoIncrementSequenceName>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="id_pessoa" id="660B5419-3D8D-0524-910E-821461A1CB1F">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:18:43 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D86768C9-16F2-A0D6-92EE-48DC0576F693" referredColumn="F82AAB05-EE27-C7AF-BD9F-925D19F0035F"/>
+</associations>
+</Column>
+<Column name="nr_ddi" id="92ACCE28-5772-6661-D25E-773B48C473D0">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número DDI.]]></commentInRDBMS>
+<generatorID>2AD082FF-2CA8-D409-9891-D27B1FAB1BBE</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<defaultValue>55</defaultValue>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_ddd" id="68D7281C-7D81-33F5-BB48-76BEFAA88E37">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numero DDD.]]></commentInRDBMS>
+<generatorID>677E761A-83A4-0572-5963-395AE671CE54</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_telefone" id="9848AAF9-C3B7-68FE-7B8F-FBFF1C2454CB">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numero telefone.]]></commentInRDBMS>
+<generatorID>06A70865-12A0-8FF9-C4B3-3DAD98D98936</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_telefone" id="4E33CE16-17C2-0844-AB73-E80FE6DA98EE">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo do telefone: C-Comercial, R-Residencial, P-Pessoal.]]></commentInRDBMS>
+<generatorID>E487F859-0CF0-05ED-A5AE-1378A1DE7678</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C47874E0-8A65-7E73-3181-30364B9766D6" name="TELEFONE_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<generatorID>AC4899FD-E4A2-77E2-26A7-61A263CDF7F0</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DCC6637-149B-6C65-A416-45BE74460E84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2DB7015-941F-9ECB-C854-5F59896054BE" name="TELEFONE_nr_ddi_nr_ddd_nr_telefone_UN">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<generatorID>62131184-C7F2-721A-704B-CE09A9000437</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92ACCE28-5772-6661-D25E-773B48C473D0"/>
+<colUsage columnID="68D7281C-7D81-33F5-BB48-76BEFAA88E37"/>
+<colUsage columnID="9848AAF9-C3B7-68FE-7B8F-FBFF1C2454CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DE01F90D-6005-38DD-4A60-F4E2DD902FE7" name="TELEFONE_PESSOA_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:54 UTC</createdTime>
+<generatorID>AE9E9644-FA7D-413C-10AA-BC85A683D623</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="660B5419-3D8D-0524-910E-821461A1CB1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

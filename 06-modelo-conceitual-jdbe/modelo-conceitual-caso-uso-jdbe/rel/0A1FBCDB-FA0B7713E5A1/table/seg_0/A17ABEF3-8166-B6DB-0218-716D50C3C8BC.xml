@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A17ABEF3-8166-B6DB-0218-716D50C3C8BC" name="ALUNO">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por persistir dados do aluno.]]></commentInRDBMS>
+<generatorID>061348B6-59EC-57D3-BCE8-4AC52451236A</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_aluno" id="616ADBC3-AD73-2D94-7D98-E0740E23D29D">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:18:43 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+<associations>
+<colAssociation fkAssociation="5B944ADF-8DB0-A11A-B79F-D05D0853B217" referredColumn="F82AAB05-EE27-C7AF-BD9F-925D19F0035F"/>
+</associations>
+</Column>
+<Column name="id_escolaridade" id="1C9D3147-76CB-20CE-7E75-34907F37265D">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<generatorID>A44781EA-8968-E0FC-07FA-69CE4D4C0405</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BED664E2-0E06-5D15-015B-596DC5584296" referredColumn="178DF416-B9B6-206F-8643-6FE783065916"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3536CF85-9DE1-15C0-5880-FEA6DEA0BA29" name="ALUNO_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:52 UTC</createdTime>
+<generatorID>FB78A3F1-D142-E550-5389-AEA32ACC8D1A</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="616ADBC3-AD73-2D94-7D98-E0740E23D29D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="561556F4-4192-326E-FC45-18BF4A24146B" name="ALUNO_ESCOLARIDADE_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<generatorID>E09FA25A-6F08-C537-8CD4-1BB02A570BBF</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C9D3147-76CB-20CE-7E75-34907F37265D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04C854B0-2D38-4681-DC5C-31E11B6D3BAD" name="ALUNO_PESSOA_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:17:53 UTC</createdTime>
+<generatorID>EE80F3ED-B2D5-4D6B-F29E-7D1CD3A44EA4</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="616ADBC3-AD73-2D94-7D98-E0740E23D29D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

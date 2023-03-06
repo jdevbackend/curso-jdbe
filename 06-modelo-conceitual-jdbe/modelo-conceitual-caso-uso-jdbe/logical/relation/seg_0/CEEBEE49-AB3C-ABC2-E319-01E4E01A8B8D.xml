@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COMENTARIO PROFESSOR FK" directorySegmentName="seg_0" id="CEEBEE49-AB3C-ABC2-E319-01E4E01A8B8D">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:54:14 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<sourcePk>AF19B32A-D277-8228-DE6B-3DB568D36A34</sourcePk>
+<identifying>false</identifying>
+<nameOnTarget>ID_PROFESSOR</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>011C923A-C9D8-4410-8A6E-BEDF3E9FE22B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E6548C8C-6D14-7C9C-CD8F-9CFDF58D0768</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
