@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4DE82FEA-9499-753E-B97E-95D8573753E7" name="AULA">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por armazenar aulas.]]></commentInRDBMS>
+<generatorID>43C430DC-7374-07BD-7D8F-E88EFC39EB74</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_aula" id="4FF95CE2-4FB8-D317-9C0E-2A9AA66F2182">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>6CD5D4C9-68EF-149A-C286-96B2CCBD2059</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_modulo" id="AF08AF2C-FD0B-F906-59B9-087AEEF663C4">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>BAC4B383-81BD-A66D-D9EC-6C679A8783AF</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EB20FA5A-8CFC-8644-FA1A-8D6FE6EFEC48" referredColumn="62C9FEC3-0268-3BD6-3714-9D79A60264E2"/>
+</associations>
+</Column>
+<Column name="nm_titulo" id="906A19D2-3268-6A99-83BF-3D567D39CAE2">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>787A460E-AE40-E2AB-5FAC-0B8E468CB7AD</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_descricao" id="FF817464-268C-6C8F-549B-437C7C8DCE49">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição detalhada da aula.]]></commentInRDBMS>
+<generatorID>6AB3FB09-88D8-B033-FDD7-9B4ABC35CCFF</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_url_video" id="AD6B8540-2FC7-607E-5B74-3B0321F0FB96">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[URL da video aula que está armazenado no Bucket S3.]]></commentInRDBMS>
+<generatorID>46CAB504-EEDA-85E3-8DF1-33D3FB973279</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_concluido" id="677AB0C9-6CA9-51EC-B296-B94814C23D62">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica se a áula foi concluída/assistida: S/N.]]></commentInRDBMS>
+<generatorID>CAB4811A-4172-AA88-2B06-B73E58CB56E4</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qt_estrelas" id="666D0FD0-0A51-9939-49C6-D079368CF873">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de estrelas. De 0 a 5.]]></commentInRDBMS>
+<generatorID>CF0D8AE5-E33C-B611-4F97-1D80DAD5A44E</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B0BDF115-2354-0112-3781-F9E5AFAC4EA0" name="AULA_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>CA45C857-AC7B-D1D8-D1F5-DB58B3B97A68</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FF95CE2-4FB8-D317-9C0E-2A9AA66F2182"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F19748A-F4D2-030B-9520-8303EAAF8EE0" name="AULA_MODULO_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>19D2ABD4-BE54-F3D4-116C-9A0B6B51DBC2</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF08AF2C-FD0B-F906-59B9-087AEEF663C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

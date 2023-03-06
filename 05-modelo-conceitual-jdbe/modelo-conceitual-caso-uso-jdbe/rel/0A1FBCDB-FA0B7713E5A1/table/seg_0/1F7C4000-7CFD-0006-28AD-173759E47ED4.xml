@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F7C4000-7CFD-0006-28AD-173759E47ED4" name="MODULO">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela responsável por armazenar todos os módulos.]]></commentInRDBMS>
+<generatorID>F3198950-E95C-2F24-F93C-44A30D529093</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_modulo" id="62C9FEC3-0268-3BD6-3714-9D79A60264E2">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único numérico sequêncial.]]></commentInRDBMS>
+<generatorID>63C13145-A9A8-2B25-1F22-0AB741D90305</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_curso" id="98F5A75E-E600-96AD-176B-926E0D715D89">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>8A724F55-BF7C-A4A7-B403-86E77A739C41</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA0109CC-6EF1-84AB-7B7E-66D0543D4CC4" referredColumn="EBE68F5C-CA49-FB8E-916E-BC504C520F1F"/>
+</associations>
+</Column>
+<Column name="nm_titulo" id="6827C091-EB38-9121-2125-307A81796FBA">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Título do módulo.]]></commentInRDBMS>
+<generatorID>E339BE60-F1EF-7A0E-1666-0E321867CA7A</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_descricao" id="2042739F-BB41-1760-BA6C-B04CC4F2FBD6">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do módulo.]]></commentInRDBMS>
+<generatorID>F1EA4CE7-CAEB-3DE8-F8E7-A8402B59843E</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qt_dias_liberacao_acesso" id="B6274FA8-74DA-523C-3ED8-B8CF77934347">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade em dias em que o módulo ficará disponível para acesso.]]></commentInRDBMS>
+<generatorID>CE492957-A037-6509-89A1-C450BCB04244</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3DFBD18F-9ECF-63EB-8EB2-410DF181EE7F" name="MODULO_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>B0BE2F5B-E9DD-CEE4-EB45-A32FC84D3C64</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62C9FEC3-0268-3BD6-3714-9D79A60264E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79CA0710-B259-AFDD-6FAE-DF17B8D5F5FC" name="MODULO_CURSO_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>5C3BC8E6-63C0-1E70-57B8-76063711B26B</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98F5A75E-E600-96AD-176B-926E0D715D89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

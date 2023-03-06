@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="50D1615D-922D-2AD3-2753-8472BB666352" name="CATEGORIA">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>9FFA9A6B-45A8-DFB5-1701-E3CD218B29F4</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_categoria" id="D63E5577-95CA-EF3D-C02A-D111F863B174">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador numérico sequencial.]]></commentInRDBMS>
+<generatorID>4DA7C7A4-A29F-CDA0-298F-C961EE608F9D</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_categoria" id="7662AB83-B387-CD38-8C45-C3A72C6B8DA5">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Categorias: Banco da dos, Back-end, Front-End, Arquitetura.]]></commentInRDBMS>
+<generatorID>16CB4BBF-303B-73AC-7C12-725A80F9729D</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E250A730-4B22-A27C-4B15-A8BD5049F0FB" name="CATEGORIA_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>BF81018A-DEBC-A873-1AD8-A7FE66FEA14C</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D63E5577-95CA-EF3D-C02A-D111F863B174"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

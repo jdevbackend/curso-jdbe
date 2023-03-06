@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D8FCFC14-8C02-5C57-2EEE-EA1B82455162" name="EVOLUCAO_AULAS">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:33:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por armazenar a evolução/progresso do aluno perante as aulas.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_aluno" id="1BABCD91-8D9B-3C29-E191-1DE9102D610B">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:33:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do aluno.]]></commentInRDBMS>
+<generatorID>F9157C59-A3F3-FC62-75A0-85B81CF6CC4C</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>97107C77-BB46-A7AC-1418-B8E3897ED459</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_aula" id="EEBF7904-56F6-2E71-6700-D197CEA6E719">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:33:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da aula.]]></commentInRDBMS>
+<generatorID>A4709277-34E5-5DC6-0637-323316132AE5</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>6CD5D4C9-68EF-149A-C286-96B2CCBD2059</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_concluido" id="45786B9B-CBB9-C7BF-AB29-CDE58E5748E3">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:34:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica se a áula foi concluída/assistida: S/N.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<constraintName>EVOLUCAO_AULA_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_concluido" id="E25C3C7D-E288-ADD1-8C53-3D40E8A7A050">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:37:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de conclusão da aula.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5D006ACD-45B2-2DCA-AF27-67A012ADD5E3" name="EVOLUCAO_AULAS PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:33:49 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EEBF7904-56F6-2E71-6700-D197CEA6E719</attributeRef>
+<attributeRef>1BABCD91-8D9B-3C29-E191-1DE9102D610B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

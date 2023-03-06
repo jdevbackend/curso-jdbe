@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="31303CC1-25A8-2BA6-AAEF-D85F34E4DAC0" containerWithKeyObject="5FF0F4E4-D244-BBD2-C26D-36D916D53F41" localFKIndex="58CE4746-562B-9421-6D20-B9560A20C6EF" name="DETALHE_TRANSACAO_ERRO_MATRICULA_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>39A99F45-7DF7-7CE2-1047-0A09E19DD616</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<referredTableLongName>MATRICULA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>39A552F4-DDFD-B66C-B163-80649FD733B7</referredTableID>
+<keyObject>0718C48C-1DC1-CC19-7E3E-54DD455EDD14</keyObject>
+<referredKeyID>0718C48C-1DC1-CC19-7E3E-54DD455EDD14</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_matricula</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

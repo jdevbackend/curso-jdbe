@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="39A552F4-DDFD-B66C-B163-80649FD733B7" name="MATRICULA">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por persistir dados da matrícula. Ela é responsável por descrever quem comprou, quando e qual curso foi adquirido na plataforma, bem como seu status.]]></commentInRDBMS>
+<generatorID>07227191-43AF-6737-0F3E-2EEC289550D4</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_matricula" id="49908003-279B-F5D5-583E-B7FE2230DE48">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único numérico sequêncial.]]></commentInRDBMS>
+<generatorID>DF09968D-B2AC-E3D5-0203-4435D7197B88</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_curso" id="979CFCA5-39F1-C41F-8FE8-74ACF0A8A880">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>D7B7E374-CC08-3172-817A-F5954923C21D</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7011755-5A00-A57F-704C-738BF838FFD5" referredColumn="EBE68F5C-CA49-FB8E-916E-BC504C520F1F"/>
+</associations>
+</Column>
+<Column name="dt_matricula" id="FC8E6549-B454-4B4E-F44D-D8177AFD43B0">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que a matrícula foi efetuada.]]></commentInRDBMS>
+<generatorID>2447D8DD-9DA0-1B5C-0A95-D93581CF9C1C</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_vigencia" id="27F620BF-4C2C-69E4-C96E-474A3B5643DC">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da vigência da matrícula.]]></commentInRDBMS>
+<generatorID>CD0C6D82-FD6D-1154-CB4D-C7E95AF842A9</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_status" id="9649B2A8-0479-1623-A392-E895C6137F69">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status da matricula que pode ser:
+P-Pendente pagamento
+A-Ativo
+I-Inativo por tempo de acesso expirado]]></commentInRDBMS>
+<generatorID>6094B7B8-C6C4-8A75-CF3C-E281D39ECCDE</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<defaultValue>P</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_aluno" id="13C1A57D-6201-7742-501C-06FDAED2A9CA">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>00DE9E44-B46B-FAC7-4AEC-6C44B6CCE3A4</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8A77ADC-A621-01BB-6493-FFF563054FE5" referredColumn="C4FF4EB7-CB2C-0151-FD09-582449F5CF00"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0718C48C-1DC1-CC19-7E3E-54DD455EDD14" name="MATRICULA_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>C4DC3F0C-61EF-4059-BEF4-1E2244D76102</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49908003-279B-F5D5-583E-B7FE2230DE48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB2CD92C-6FC3-DC09-FE83-AC5484FA561D" name="MATRICULA_id_curso_UN">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>AEEFC2A2-5B29-3DA9-F133-03A19750FF53</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="979CFCA5-39F1-C41F-8FE8-74ACF0A8A880"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1AF7E6C0-DD2F-B837-5E30-4AB3CBD88E8F" name="MATRICULA_ALUNO_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>1CB17486-7F1A-D485-F79A-9000A5B7A2BE</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13C1A57D-6201-7742-501C-06FDAED2A9CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9E547EE-DEDF-43E6-AF90-841BA0F70619" name="MATRICULA_CURSO_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>AA7EC294-109C-29F9-2EB3-C38703F64195</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="979CFCA5-39F1-C41F-8FE8-74ACF0A8A880"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

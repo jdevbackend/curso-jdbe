@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58789C38-74E0-EF1C-2F50-28C7EAEAAFCF" name="ENDERECO">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por persistir dados do endereço.]]></commentInRDBMS>
+<generatorID>7EAAF329-F0AE-032C-1FDF-B64383AE2336</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_endereco" id="35337613-5BDB-A713-C8D1-82FF7E2EA330">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>501EAE45-9DDB-1945-CDC3-52AE1606C726</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_aluno" id="248B1B71-63FE-C598-CBF9-B05169C80819">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>35E659FC-80D0-71F7-2B8F-C25D80009EA7</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF9D63DE-1835-1964-5D67-E6D65C0F8BB5" referredColumn="C4FF4EB7-CB2C-0151-FD09-582449F5CF00"/>
+</associations>
+</Column>
+<Column name="id_cidade" id="3109F4E5-D74E-8882-9866-3913E3EE4DE8">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>B30DA0FC-76B0-7E59-DE07-DB40A549A130</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="300550AA-F315-676D-2AE2-1151F0C9C5CC" referredColumn="E571B48C-F8A1-1CDD-B4D1-B68E9E6DBCC0"/>
+</associations>
+</Column>
+<Column name="nm_logradouro" id="B43282D8-7B36-3F9A-1F38-A981AEC0EAAB">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do logradouro onde o aluno reside.]]></commentInRDBMS>
+<generatorID>DADC82B4-D994-3B2A-E423-F976F0246AB1</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_logradouro" id="AC57E176-79D4-B009-F4B6-A5D7F92E515C">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do logradouro.]]></commentInRDBMS>
+<generatorID>E8AE8CC8-F8E6-2C5C-0A74-41CD920DC88D</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_cep" id="24841ADF-0647-9339-BA3A-749C33C46737">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[CEP referente ao logradouro.]]></commentInRDBMS>
+<generatorID>03F4103E-442F-D571-7642-44880EA3C974</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF8E884E-C3F0-4DC7-954A-F6BF5E7F91A6" name="ENDERECO_PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>20358181-C0D0-5F06-67FD-62367C9FFF6A</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35337613-5BDB-A713-C8D1-82FF7E2EA330"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="882900B6-4836-1BEE-1506-78F76C89D4F8" name="ENDERECO_ALUNO_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>CDA1D95F-2086-4690-5611-F3736B3E2630</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="248B1B71-63FE-C598-CBF9-B05169C80819"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36BE4E33-5CDA-142A-1678-498AD4E40D14" name="ENDERECO_CIDADE_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>51FE5EA5-6595-F167-4CEA-50C94A82D7A1</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3109F4E5-D74E-8882-9866-3913E3EE4DE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

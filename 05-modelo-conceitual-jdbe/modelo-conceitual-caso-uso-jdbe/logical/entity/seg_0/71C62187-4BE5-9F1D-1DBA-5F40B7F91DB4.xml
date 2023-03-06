@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="71C62187-4BE5-9F1D-1DBA-5F40B7F91DB4" name="AVALIACAO">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:24:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela responsável por armazenar os dados de avaliação das aulas.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_aluno" id="8654845B-0CF1-BA46-C136-E0B560C0B563">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:25:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do aluno.]]></commentInRDBMS>
+<generatorID>746AA3B0-41E1-B95E-7023-69B400B92551</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>97107C77-BB46-A7AC-1418-B8E3897ED459</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_aula" id="EAAE1CE2-4E54-1B30-EB20-4A890B8DF182">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:25:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador da aula.]]></commentInRDBMS>
+<generatorID>810DA733-0B93-7982-C3E3-6920623CD1C7</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>6CD5D4C9-68EF-149A-C286-96B2CCBD2059</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qt_estrelas" id="2164152E-E752-CB58-4587-DE2EB4FB9FDB">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:26:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de estrelas de 1 a 5.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<constraintName>AVALIACAO_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<listOfValues>
+<valueDef value="1" description=""/>
+<valueDef value="2" description=""/>
+<valueDef value="3" description=""/>
+<valueDef value="4" description=""/>
+<valueDef value="5" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6964EC47-3D6B-E85B-8391-9F67749B93B1" name="AVALIACAO PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 17:26:06 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EAAE1CE2-4E54-1B30-EB20-4A890B8DF182</attributeRef>
+<attributeRef>8654845B-0CF1-BA46-C136-E0B560C0B563</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

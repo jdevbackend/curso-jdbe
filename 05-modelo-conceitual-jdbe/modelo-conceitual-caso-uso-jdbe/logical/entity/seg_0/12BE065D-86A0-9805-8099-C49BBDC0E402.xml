@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12BE065D-86A0-9805-8099-C49BBDC0E402" name="TELEFONE">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 02:21:22 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_telefone" id="C7CE0002-4C94-1953-81F9-B75884D80C82">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 02:21:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador numérico.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pessoa" id="EB918F93-3CAC-EEAC-FFE8-E4248CCA25F9">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:43:02 UTC</createdTime>
+<generatorID>AE9E9644-FA7D-413C-10AA-BC85A683D623</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>D2A9D7F8-17B4-C307-ED0B-A32EFF2AB47C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_ddi" id="2AD082FF-2CA8-D409-9891-D27B1FAB1BBE">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 02:21:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número DDI.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<defaultValue>55</defaultValue>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_ddd" id="677E761A-83A4-0572-5963-395AE671CE54">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 02:21:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numero DDD.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_telefone" id="06A70865-12A0-8FF9-C4B3-3DAD98D98936">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 02:22:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numero telefone.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tp_telefone" id="E487F859-0CF0-05ED-A5AE-1378A1DE7678">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 02:24:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do tipo do telefone: C-Comercial, R-Residencial, P-Pessoal.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AC4899FD-E4A2-77E2-26A7-61A263CDF7F0" name="TELEFONE PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 02:23:36 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C7CE0002-4C94-1953-81F9-B75884D80C82</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="62131184-C7F2-721A-704B-CE09A9000437" name="PESSOA_TELEFONE_UK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 02:23:47 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<newElementsIDs>2AD082FF-2CA8-D409-9891-D27B1FAB1BBE,677E761A-83A4-0572-5963-395AE671CE54,06A70865-12A0-8FF9-C4B3-3DAD98D98936</newElementsIDs>
+<usedAttributes>
+<attributeRef>2AD082FF-2CA8-D409-9891-D27B1FAB1BBE</attributeRef>
+<attributeRef>677E761A-83A4-0572-5963-395AE671CE54</attributeRef>
+<attributeRef>06A70865-12A0-8FF9-C4B3-3DAD98D98936</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F1DB9349-F52D-2D00-6B90-3BB63CE7A2A5" name="DETALHE_TRANSACAO_ERRO">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-04 22:04:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entidade responsável por armazenar as mensagens de erro que podem acontecer com a API de pagamento.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_erro" id="91354F10-9858-B9AC-A8E1-663F56F6E7EE">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:26:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único numérico sequêncial.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_matricula" id="300BBF06-B302-CC19-467E-21A2A3097275">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:27:47 UTC</createdTime>
+<generatorID>39A99F45-7DF7-7CE2-1047-0A09E19DD616</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<referedAttribute>DF09968D-B2AC-E3D5-0203-4435D7197B88</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_erro" id="DE9C7672-8ACD-B1C6-0AB4-AB9A3534F848">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:35:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do erro na API de pagamento.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_erro" id="FB487BDF-8C7F-8A7B-2D00-1173529C684E">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:35:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do erro devolvida pela API de pagamento.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_erro" id="85A65F61-FA06-62B0-57E2-062E0E6D3E3D">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 00:36:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que o erro ocorreu.]]></commentInRDBMS>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="41368168-9C3E-38CC-C03C-307BFED89917" name="DETALHE_TRANSACAO_ERRO PK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 01:27:14 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>91354F10-9858-B9AC-A8E1-663F56F6E7EE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

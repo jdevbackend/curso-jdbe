@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="USUARIO_PESSOA" directorySegmentName="seg_0" id="729C897B-EA50-92EE-C446-5F3742522807">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 03:37:03 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<engineerTo>
+<item key="0A1FBCDB-235C-C73E-E39D-FA0B7713E5A1" value="true"/>
+</engineerTo>
+<sourcePk>7CA01713-0675-2863-D2DB-F57AAAE3566E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7D0C467B-5FB2-8E8F-5555-9A1DD8205AFC</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D96AF7C0-25DE-C345-D7A3-C6741BB1BE2E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

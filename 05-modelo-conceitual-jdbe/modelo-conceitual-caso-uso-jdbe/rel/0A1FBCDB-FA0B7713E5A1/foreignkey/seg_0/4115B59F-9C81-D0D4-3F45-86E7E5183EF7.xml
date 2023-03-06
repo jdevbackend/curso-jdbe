@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4115B59F-9C81-D0D4-3F45-86E7E5183EF7" containerWithKeyObject="338CBB63-D4F9-A901-AFD1-6340677CCAD5" localFKIndex="2728EB7F-5C0F-1F06-C792-6C224F0E1130" name="PROFESSOR_PESSOA_FK">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-05 04:10:50 UTC</createdTime>
+<generatorID>38CC14E6-F0CE-BAFB-C214-59CD3F0225CD</generatorID>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<referredTableLongName>PESSOA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E2B6FAB3-1CF8-C34E-6230-149D86C7F9F0</referredTableID>
+<keyObject>43D0B315-AA33-4095-A641-2383068816EF</keyObject>
+<referredKeyID>43D0B315-AA33-4095-A641-2383068816EF</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
