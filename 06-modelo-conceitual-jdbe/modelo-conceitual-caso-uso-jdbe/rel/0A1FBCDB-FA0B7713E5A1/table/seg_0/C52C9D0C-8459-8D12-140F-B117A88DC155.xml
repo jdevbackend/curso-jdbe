@@ -106,7 +106,7 @@
 <colUsage columnID="4DCC6637-149B-6C65-A416-45BE74460E84"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B2DB7015-941F-9ECB-C854-5F59896054BE" name="TELEFONE_nr_ddi_nr_ddd_nr_telefone_UN">
+<ind_PK_UK id="B2DB7015-941F-9ECB-C854-5F59896054BE" name="TELEFONE_UN">
 <createdBy>priscilaresende</createdBy>
 <createdTime>2023-03-06 19:17:53 UTC</createdTime>
 <generatorID>62131184-C7F2-721A-704B-CE09A9000437</generatorID>

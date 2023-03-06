@@ -40,6 +40,21 @@
 <colAssociation fkAssociation="671158B9-9B1E-AC16-D236-ED8A07C8686F" referredColumn="ED34B530-861F-2D4C-9C33-9894E991896B"/>
 </associations>
 </Column>
+<Column name="id_aluno" id="C088E17B-5A76-F8C4-6267-B6F827441F8E">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:19:22 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA384250-BBC7-F405-0721-DFE2E0FDE5CB" referredColumn="616ADBC3-AD73-2D94-7D98-E0740E23D29D"/>
+</associations>
+</Column>
 <Column name="dt_matricula" id="47595641-9538-684D-2098-3ADB798CA0DC">
 <createdBy>priscilaresende</createdBy>
 <createdTime>2023-03-06 19:17:52 UTC</createdTime>
@@ -86,33 +101,6 @@ I-Inativo por tempo de acesso expirado]]></commentInRDBMS>
 <defaultValue>P</defaultValue>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_aluno" id="6C30A6A6-2518-E2DD-92F8-4A2D066DC2F3">
-<createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-06 19:17:52 UTC</createdTime>
-<generatorID>715E4192-7B94-E00B-7FAB-85D15198C579</generatorID>
-<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ALUNO_PESSOA_id_pessoa" id="C088E17B-5A76-F8C4-6267-B6F827441F8E">
-<createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-06 19:19:22 UTC</createdTime>
-<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="FA384250-BBC7-F405-0721-DFE2E0FDE5CB" referredColumn="616ADBC3-AD73-2D94-7D98-E0740E23D29D"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

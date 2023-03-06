@@ -14,7 +14,9 @@
 <createdTime>2023-03-06 19:17:52 UTC</createdTime>
 <generatorID>501EAE45-9DDB-1945-CDC3-52AE1606C726</generatorID>
 <ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <defaultValue>ENDERECO_SEQ.NEXTVAL</defaultValue>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementColumn>true</autoIncrementColumn>
@@ -35,6 +37,20 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="323386DB-6A3B-6798-0CE3-53CBE794A3CD" referredColumn="08F6FCD3-4B32-1B95-2F3F-478AD424467F"/>
+</associations>
+</Column>
+<Column name="id_aluno" id="078E89EF-3D6A-BDDE-C563-6F9501196BA6">
+<createdBy>priscilaresende</createdBy>
+<createdTime>2023-03-06 19:19:22 UTC</createdTime>
+<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE9EE890-D7D8-0335-3327-6EDF87CCC399" referredColumn="616ADBC3-AD73-2D94-7D98-E0740E23D29D"/>
 </associations>
 </Column>
 <Column name="nm_logradouro" id="E58C29D6-C1B2-90B2-7B08-57E685FBFDF4">
@@ -75,31 +91,6 @@
 <dataTypePrecision>8</dataTypePrecision>
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="id_aluno" id="889EF2DE-F4D3-4588-4E15-43572C5C5FC8">
-<createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-06 19:17:52 UTC</createdTime>
-<generatorID>CA209CAC-B8C6-42C8-FF83-47063F905210</generatorID>
-<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ALUNO_PESSOA_id_pessoa" id="078E89EF-3D6A-BDDE-C563-6F9501196BA6">
-<createdBy>priscilaresende</createdBy>
-<createdTime>2023-03-06 19:19:22 UTC</createdTime>
-<ownerDesignName>modelo-conceitual-caso-uso-jdbe</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="BE9EE890-D7D8-0335-3327-6EDF87CCC399" referredColumn="616ADBC3-AD73-2D94-7D98-E0740E23D29D"/>
-</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

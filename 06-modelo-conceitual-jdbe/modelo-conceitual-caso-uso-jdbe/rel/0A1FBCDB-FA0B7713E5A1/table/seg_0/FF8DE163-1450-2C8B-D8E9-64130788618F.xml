@@ -22,6 +22,7 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementSequenceName>CIDADE_SEQ</autoIncrementSequenceName>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
 </Column>
 <Column name="nm_cidade" id="36EE2567-9910-7DD3-8A94-3AFA795A53BA">
 <createdBy>priscilaresende</createdBy>

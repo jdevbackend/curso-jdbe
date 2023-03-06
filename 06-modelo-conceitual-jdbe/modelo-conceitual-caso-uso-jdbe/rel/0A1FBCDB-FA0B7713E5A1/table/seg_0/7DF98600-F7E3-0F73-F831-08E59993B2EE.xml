@@ -22,6 +22,7 @@
 <autoIncrementColumn>true</autoIncrementColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <autoIncrementSequenceName>AULA_SEQ</autoIncrementSequenceName>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
 </Column>
 <Column name="id_modulo" id="49C25B4E-E870-92C8-62C4-B6BDEE763DB0">
 <createdBy>priscilaresende</createdBy>

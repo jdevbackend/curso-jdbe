@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="13A4D809-CCED-5818-CD39-CD8016E2CCB2" containerWithKeyObject="798F3FF2-B780-F548-5D54-06DF6CD26B9C" localFKIndex="79A2CC3F-745B-4313-6EF9-FF358A35D224" name="DETALHE_TRANSACAO_ERRO_MATRICULA_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="13A4D809-CCED-5818-CD39-CD8016E2CCB2" containerWithKeyObject="798F3FF2-B780-F548-5D54-06DF6CD26B9C" localFKIndex="79A2CC3F-745B-4313-6EF9-FF358A35D224" name="DETALHE_TRANSACAO_ERRO_FK">
 <createdBy>priscilaresende</createdBy>
 <createdTime>2023-03-06 19:17:54 UTC</createdTime>
 <generatorID>39A99F45-7DF7-7CE2-1047-0A09E19DD616</generatorID>
