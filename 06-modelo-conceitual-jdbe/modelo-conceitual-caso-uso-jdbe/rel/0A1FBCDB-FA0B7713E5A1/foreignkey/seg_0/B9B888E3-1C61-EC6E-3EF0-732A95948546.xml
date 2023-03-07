@@ -11,7 +11,7 @@
 <referredKeyID>868257EE-9CE8-9A10-7BF5-4E1DDACCC9E8</referredKeyID>
 <mandatory>true</mandatory>
 <refColNames>id_pessoa</refColNames>
-<transferable>false</transferable>
+<transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
 </FKIndexAssociation>
