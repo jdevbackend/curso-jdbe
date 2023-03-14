@@ -1,3 +1,5 @@
+CREATE SCHEMA `jdbe` ;
+USE jdbe;
 -- Script de criação do Modelo de dados da JDBE para o SGBD PostgreSQL
 CREATE TABLE administrador (
     id_administrador INTEGER AUTO_INCREMENT NOT NULL COMMENT 'Salário do Administrador',
