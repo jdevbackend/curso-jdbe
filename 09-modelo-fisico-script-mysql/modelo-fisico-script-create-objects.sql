@@ -1,4 +1,4 @@
-CREATE SCHEMA `jdbe` ;
+CREATE SCHEMA jdbe;
 USE jdbe;
 -- Script de criação do Modelo de dados da JDBE para o SGBD PostgreSQL
 CREATE TABLE administrador (
@@ -18,7 +18,7 @@ CREATE TABLE aula (
     id_aula      INTEGER NOT NULL AUTO_INCREMENT,
     id_modulo    INTEGER NOT NULL,
     nm_titulo    VARCHAR(30) NOT NULL COMMENT 'Título da aula',
-    ds_descricao VARCHAR(2000) NOT NULL COMMENT 'Descrição detalhada da aula.',
+    ds_descricao VARCHAR(2000) NOT NULL COMMENT 'Descrição detalhada da aula.', 
     ds_url_video VARCHAR(2000) NOT NULL COMMENT 'URL da video aula que está armazenado no Bucket S3.',
     PRIMARY KEY (id_aula)
 ) COMMENT 'Entidade responsável por armazenar aulas.';
