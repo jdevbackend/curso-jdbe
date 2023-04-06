@@ -1,0 +1,49 @@
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+----------------------------- COMANDOS DML -------------------------------------
+-------------------------------- INSERT ----------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+/**  OBS: 
+       - DADOS DE STRING E DATA DEVEM SER DELIMITADOS POR ASPAS SIMPLES;
+       - COLUNAS QUE POSSUEM VALORES DEFAULT DEFINIDOS NÃO PRECISAM SER 
+         DECLARADOS NA INSTRUÇÃO INSERT;
+       - ATENTAR SE A COLUNA DE CHAVE PRIMÁRIA POSSUI UMA SEQUENCE COMO VALOR
+         DEFAULT PARA A COLUNA
+**/
+
+-- 01) RESPEITANDO A ORDEM DAS COLUNAS DA TABELA NA INSTRUÇÃO INSERT;
+INSERT INTO CATEGORIA VALUES(7, 'Spring Framework');
+INSERT INTO CATEGORIA VALUES(CATEGORIA_SEQ.NEXTVAL, 'Lógica de Programação');
+COMMIT;
+
+-- NEXTVAL OBTÉM O PRÓXIMO VALOR NA SEQUENCE
+SELECT CATEGORIA_SEQ.NEXTVAL FROM DUAL;
+-- CURRVAL OBTÉM O VALOR CORRENTE DA SEQUENCE
+SELECT CATEGORIA_SEQ.CURRVAL FROM DUAL;
+
+
+-- 02) DEFININDO A ORDEM DAS COLUNAS NA INSTRUÇÃO INSERT;
+-- ALTERAÇÃO DA COLUNA PARA ADICIONAR VALOR DEFAULT COM SYSDATE:
+ALTER TABLE USUARIO MODIFY DT_CADASTRO DEFAULT SYSDATE;
+
+INSERT INTO USUARIO (NM_USUARIO, DS_SENHA) VALUES('adm03', '4dm002');
+
+INSERT INTO PESSOA (ID_USUARIO, DT_NASCIMENTO, NM_PRIMEIRO_NOME, NM_SOBRENOME,
+                    CD_RG, CD_CPF)
+             VALUES(14, TO_DATE('28/10/1990', 'DD/MM/RRRR'), 'Adalberto', 
+                    'Ferreira', 390938488, 49484844994);
+                    
+INSERT INTO ADMINISTRADOR VALUES(13, 2453.29);
+COMMIT;
+
+-- 03) INSERINDO DADOS A PARTIR DE OUTRA TABELA;
+
+CREATE TABLE ADMINISTRADOR_BKP(ID_ADMINISTRADOR	NUMBER,
+                               VL_SALARIO	NUMBER(8,2));
+                               
+INSERT INTO ADMINISTRADOR_BKP (ID_ADMINISTRADOR, VL_SALARIO)
+SELECT *
+  FROM ADMINISTRADOR;
+
+DROP TABLE ADMINISTRADOR_BKP;
