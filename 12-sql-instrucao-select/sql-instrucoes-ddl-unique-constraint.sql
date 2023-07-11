@@ -1,0 +1,125 @@
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-------------------------------- CONSTRAINT UNIQUE -----------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-- EXEMPLO DE MÁ PRÁTICA NA DEFINIÇÃO DE UMA PRIMARY KEY:
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-- CRIAÇÃO DAS TABELAS:
+CREATE TABLE TB_TELEFONE (NR_TELEFONE NUMBER(10),
+                          TP_TELEFONE CHAR(1) DEFAULT 'P',
+CONSTRAINT TB_TELEFONE_PK PRIMARY KEY(NR_TELEFONE),
+CONSTRAINT TB_TELEFONE_CHK CHECK (TP_TELEFONE IN('R','P','C')));
+
+CREATE TABLE TB_PESSOA(CD_PESSOA NUMBER,
+                       NM_PESSOA VARCHAR2(50),
+                       NR_TELEFONE NUMBER(10),
+CONSTRAINT TB_PESSOA_PK PRIMARY KEY (CD_PESSOA),
+CONSTRAINT TB_PESSOA_FK01 FOREIGN KEY (NR_TELEFONE) 
+REFERENCES TB_TELEFONE(NR_TELEFONE));
+
+--------------------------------------------------------------------------------
+-- INCLUSÃO DE REGISTRO COM TELEFONE COM ATÉ 10 DÍGITOS:
+INSERT INTO TB_TELEFONE VALUES(1198888888,'P');
+INSERT INTO TB_PESSOA VALUES(1,'PRISCILA', 1198888888);
+
+-- AUMENTANTO O TAMANHO DA COLUNA DE 10 CARACTERES PARA 11. PARA ACEITAR 
+-- MAIS UM DÍGITO:
+ALTER TABLE TB_TELEFONE MODIFY NR_TELEFONE NUMBER(11);
+ALTER TABLE TB_PESSOA MODIFY NR_TELEFONE NUMBER(11);
+
+-- DESABILITANDO A CONSTRAINT:
+ALTER TABLE TB_PESSOA DISABLE CONSTRAINT TB_PESSOA_FK01;
+--------------------------------------------------------------------------------
+-- DEPOIS DE DESABILITAR A CONSTRAINT FOREIGN KEY, CONSEGUIREMOS AJUSTAR OS 
+-- VALORES NAS COLUNAS PRIMARY KEY E FOREIGN KEY. VEJA QUE, POR CONTA DO NÚMERO 
+-- DE TELEFONE FAZER PARTE DA CHAVE PRIMÁRIA, EU PRECISO REALIZAR O AJUSTE 
+-- ACRESCENTANDO O DÍGITO 9 EM TODAS AS TABELAS QUE POSSUEM REFERENCIA À COLUNA 
+-- TB_PESSOA.NR_TELEFONE:
+UPDATE TB_TELEFONE
+   SET NR_TELEFONE = SUBSTR(NR_TELEFONE,1,2) || 9 || SUBSTR(NR_TELEFONE, 3,8);
+
+UPDATE TB_PESSOA
+   SET NR_TELEFONE = SUBSTR(NR_TELEFONE,1,2) || 9 || SUBSTR(NR_TELEFONE, 3,8);
+
+
+-- APÓS O AJUSTE NOS REGISTROS, HABILITAMOS A CONSTRAINT:
+ALTER TABLE TB_PESSOA ENABLE CONSTRAINT TB_PESSOA_FK01;
+--------------------------------------------------------------------------------
+-- AJUSTE NA ESTRUTURA DAS TABELAS TB_PESSOA E TB_TELEFONE REMOVENDO O 
+-- NR_REGISTRO DA PRIMARY KEY:
+-- PRIMEIRO IREMOS REMOVER AS TABELAS NA ESTRUTURA ANTERIOR:
+DROP TABLE TB_PESSOA;
+DROP TABLE TB_TELEFONE;
+
+-- AGORA O NR_TELEFONE NÃO FAZ PARTE DA CHAVE PRIMÁRIA, CRIAMOS UMA NOVA COLUNA
+-- QUE RECEBERÁ UM VALOR INTEIRO SEQUENCIAL GERADO ATRAVÉS DE UMA SEQUENCE, ESTA
+-- AGORA SERÁ A NOVA PRIMARY KEY:
+CREATE SEQUENCE TB_TELEFONE_SEQ START WITH 1 INCREMENT BY 1;
+CREATE TABLE TB_TELEFONE (CD_TELEFONE INTEGER DEFAULT TB_TELEFONE_SEQ.NEXTVAL,
+                          NR_TELEFONE NUMBER(10),
+                          TP_TELEFONE CHAR(1) DEFAULT 'P',
+CONSTRAINT TB_TELEFONE_PK PRIMARY KEY(CD_TELEFONE), -- E PARA GARANTIR A 
+-- UNICIDADE DO NÚMERO DE TELEFONE NA ENTIDADE, CRIAMOS UMA
+-- CONSTRAINT UNIQUE PARA A COLUNA NR_TELEFONE
+CONSTRAINT TB_TELEFONE_UK UNIQUE (NR_TELEFONE),
+CONSTRAINT TB_TELEFONE_CHK CHECK (TP_TELEFONE IN('R','P','C')));
+
+-- COM A NOVA PRIMARY KEY, NA TABELA PESSOA, O NR_TELEFONE NÃO SERÁ MAIS 
+-- PROPAGADO PARA AS DEMAIS ENTIDADES, E SIM O CD_TELEFONE QUE É UM VALOR 
+-- (NUMÉRICO INTEIRO SEQUENCIAL) GERADO POR UMA SEQUENCE.
+-- DESSA FORMA, SE ESTE FOSSE A MODELAGEM INICIAL, BASTARIA AJUSTAR OS NÚMEROS
+-- DE TELEFONE SOMENTE NA TABELA TB_TELEFONE:
+CREATE TABLE TB_PESSOA(CD_PESSOA NUMBER,
+                       NM_PESSOA VARCHAR2(50),
+                       CD_TELEFONE INTEGER,
+CONSTRAINT TB_PESSOA_PK PRIMARY KEY (CD_PESSOA),
+CONSTRAINT TB_PESSOA_FK01 FOREIGN KEY (CD_TELEFONE) REFERENCES 
+TB_TELEFONE(CD_TELEFONE));
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-- CENÁRIO PESSOA FÍSICA/JURÍDICA:
+CREATE SEQUENCE TB_PESSOA_FISICA_SEQ START WITH 1 INCREMENT BY 1;
+CREATE TABLE TB_PESSOA_FISICA(ID_PESSOA     NUMBER DEFAULT 
+                              TB_PESSOA_FISICA_SEQ.NEXTVAL,
+                              NM_PESSOA     VARCHAR2(50),
+                              CD_CPF        INTEGER,
+                              DT_NASCIMENTO DATE,
+                              VL_SALARIO    NUMBER(18,2),
+CONSTRAINT TB_PESSOA_FISICA_PK PRIMARY KEY(ID_PESSOA));
+
+-- PESSOA JURÍDICA
+CREATE SEQUENCE TB_PESSOA_JURIDICA_SEQ START WITH 1 INCREMENT BY 1;
+CREATE TABLE TB_PESSOA_JURIDICA(ID_PESSOA                   NUMBER DEFAULT 
+                                TB_PESSOA_JURIDICA_SEQ.NEXTVAL,
+                                NM_FANTASIA                 VARCHAR2(50),
+                                NM_RAZAO_SOCIAL             VARCHAR2(100),
+                                CD_CPF                      INTEGER,
+                                CD_CNPJ_INSCRICAO           NUMBER(8),
+                                CD_CNPJ_MATRIZ              NUMBER(4),
+                                CD_CNPJ_DIGITO_VERIFICADOR  NUMBER(2),
+                                DT_ABERTURA                 DATE,
+CONSTRAINT TB_PESSOA_JURIDICA_PK PRIMARY KEY(ID_PESSOA));
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-- ADICIONANDO UMA CONSTRAINT UNIQUE NO CAMPO CD_CPF:
+ALTER TABLE TB_PESSOA_FISICA ADD CONSTRAINT TB_PESSOA_FISICA_UK UNIQUE (CD_CPF);
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-- ADICIONANDO UMA CONSTRAINT UNIQUE REFERENCIANDO MÚLTIPLAS COLUNAS:
+ALTER TABLE TB_PESSOA_JURIDICA ADD CONSTRAINT TB_PESSOA_JURIDICA_UK UNIQUE 
+(CD_CNPJ_INSCRICAO, CD_CNPJ_MATRIZ,CD_CNPJ_DIGITO_VERIFICADOR);
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-- REMOÇÃO DOS OBJETOS UTILIZADOS NA AULA:
+DROP TABLE TB_PESSOA_FISICA;
+DROP TABLE TB_PESSOA_JURIDICA;
+DROP SEQUENCE TB_PESSOA_FISICA_SEQ;
+DROP SEQUENCE TB_PESSOA_JURIDICA_SEQ;
+DROP SEQUENCE TB_TELEFONE_SEQ;
+DROP TABLE TB_PESSOA;
+DROP TABLE TB_TELEFONE;
