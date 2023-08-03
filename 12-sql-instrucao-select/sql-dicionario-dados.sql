@@ -1,0 +1,37 @@
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+------------------------- DICIONARIO DE DADOS ----------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-- ENTIDADE DICTIONARY;
+SELECT *
+  FROM DICTIONARY
+ WHERE TABLE_NAME LIKE '%USER%';
+ 
+-- 1) USER
+SELECT * FROM USER_OBJECTS;
+SELECT * FROM USER_TABLES;
+SELECT * FROM USER_SEQUENCES;
+SELECT * FROM USER_SYNONYMS;
+SELECT * FROM USER_INDEXES;
+SELECT * FROM USER_TAB_COLS WHERE TABLE_NAME = 'ADMINISTRADOR';
+SELECT * FROM USER_CONS_COLUMNS;
+
+-- CRIANDO UM PROCEDIMENTO PARA CONSULTÁ-LO NA TABELA DO DICIONÁRIO USER_SOURCE:
+CREATE OR REPLACE PROCEDURE OLA_MUNDO
+IS 
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('OLÁ MUNDO!');
+END;
+
+-- VERIFICANDO O CÓDIGO FONTE NA USER_SOURCE:
+SELECT * FROM USER_SOURCE;
+
+-- 2) ALL
+SELECT * FROM ALL_OBJECTS;
+SELECT * FROM ALL_TABLES;
+SELECT * FROM ALL_SEQUENCES;
+SELECT * FROM ALL_CONS_COLUMNS;
+-- 4) DBA: PESQUISAR SOBRE O DICIONÁRIO DE DADOS PARA DBA;
+-- 5) V$: PESQUISAR SOBRE O DICIONÁRIO DE DADOS COM PREFIXO V$. ESSAS VIEWS
+--    ESTÃO RELACIONADAS AO DESEMPENHO DO ORACLE.
