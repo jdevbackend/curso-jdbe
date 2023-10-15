@@ -13,25 +13,25 @@ public class TiposPrimitivosInteiros {
 
     private static void exercicioTipoPrimitivo() {
 
-        byte numeroMenor = -128;
-        byte numeroMaior = 127;
+        byte byteMenor = -128;
+        byte byteMaior = 127;
 
-        System.out.println("Antes da operação: " + numeroMenor + " === " + numeroMaior);
+        System.out.println("Antes da operação: " + byteMenor + " === " + byteMaior);
 
-        numeroMenor--;
-        numeroMaior++;
+        byteMenor--;
+        byteMaior++;
 
-        System.out.println("Antes da operação: " + numeroMenor + " === " + numeroMaior);
+        System.out.println("Antes da operação: " + byteMenor + " === " + byteMaior);
 
-        short numeroShortMenor = -32768;
-        short numeroShortMaior = 32767;
+        short shortMenor = -32768;
+        short shortMaior = 32767;
 
-        System.out.println("Antes da operação tipo short: " + numeroShortMenor + " === " + numeroShortMaior);
+        System.out.println("Antes da operação tipo short: " + shortMenor + " === " + shortMaior);
 
-        numeroShortMenor--;
-        numeroShortMaior++;
+        shortMenor--;
+        shortMaior++;
 
-        System.out.println("Antes da operação tipo short: " + numeroShortMenor + " === " + numeroShortMaior);
+        System.out.println("Antes da operação tipo short: " + shortMenor + " === " + shortMaior);
 
     }
 }
